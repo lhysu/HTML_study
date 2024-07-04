@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 콜론(;)붙이는 거 유의 */
+        #t01{
+            text-align: center;             /* 테이블 내 텍스트 가운데 정렬 */
+            font-family: Arial, Helvetica, sans-serif;      /*폰트 변경*/
+            width: 100%;                    /*폭을 화면에 가득 차게 변경*/
+        }   
+        #t02{
+            text-align: center;             /* 테이블 내 텍스트 가운데 정렬 */
+            font-family: Arial, Helvetica, sans-serif;      /*폰트 변경*/
+            width: 50%;                    /*폭을 화면에 가득 차게 변경*/
+        }
+        #t01 th,#t01 td{
+            border: 1px solid #6c137b;             /*border: 표에 선 표시 */
+            padding: 8px;
+        }
+        #t02 th,#t02 td{
+            border: 1px solid #9f1b4c;             /*border: 표에 선 표시 */
+            padding: 8px;
+        }
+        #t01 tr{
+            background-color: bisque;               /*표 배경색*/
+        }
+        #t02 tr:nth-child(3){
+            background-color: rgb(164, 241, 88);               /*nth-child(n): n번에만 적용*/
+        }
+        #t02 tr:nth-child(even){
+            background-color: rgb(79, 109, 49);               /*nth-child(even): 짝수번에만 적용*/
+        }
+        #t01 tr:hover{
+            background-color: azure;                /*마우스를 올린 행 색이 변함(셀 색을 바꾸고 싶으면 td에 hover)*/
+        }
+        #t02 tr:hover{
+            background-color: rgb(164, 255, 209);                /*마우스를 올린 행 색이 변함(셀 색을 바꾸고 싶으면 td에 hover)*/
+        }
+        th{
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 표 (4x4)-->
+    <table id="t01">                   
+        <!-- tr:행(table row), td: 셀(table data), th:제목 -->
+        <!-- 검색하기 좋게 thead, tbody, tfoot으로 구분 -->
+        
+        <thead>
+            <tr>
+                <th>이름</th>                                   <!--<col> 태그도 존재는 하지만 잘 사용x-->
+                <th>국어</th>
+                <th>영어</th>
+                <th>수학</th>
+            </tr>
+            
+        </thead>
+        
+                    
+        <tbody>
+            <tr>
+                <td>김길동</td>
+                <td>99</td>
+                <td>88</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <td>김길동</td>
+                <td>99</td>
+                <td>88</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <td>김길동</td>
+                <td>99</td>
+                <td>88</td>
+                <td>77</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">???학교 ??학번 성적</td>
+                <!-- colspan: 셀 4개를 하나로 합침 -->
+            </tr>
+        </tfoot>
+        <!-- tfoot:보통 표에 대한 설명 , 바닥에 고정-->
+    
+    
+        <table id="t02">                   
+            <!-- tr:행(table row), td: 셀(table data), th:제목 -->
+            <!-- 검색하기 좋게 thead, tbody, tfoot으로 구분 -->
+            
+            <thead>
+                <tr>
+                    <th>이름</th>                                   <!--<col> 태그도 존재는 하지만 잘 사용x-->
+                    <th>국어</th>
+                    <th>영어</th>
+                    <th>수학</th>
+                </tr>
+                
+            </thead>
+            
+                        
+            <tbody>
+                <tr>
+                    <td>김길동</td>
+                    <td>99</td>
+                    <td>88</td>
+                    <td>77</td>
+                </tr>
+                <tr>
+                    <td>김길동</td>
+                    <td>99</td>
+                    <td>88</td>
+                    <td>77</td>
+                </tr>
+                <tr>
+                    <td>김길동</td>
+                    <td>99</td>
+                    <td>88</td>
+                    <td>77</td>
+                </tr>
+                <tr>
+                    <td>김길동</td>
+                    <td>99</td>
+                    <td>88</td>
+                    <td>77</td>
+                </tr>
+            </tbody>
+    
+            <tfoot>
+                <tr>
+                    <td colspan="4">???학교 ??학번 성적</td>
+                    <!-- colspan: 셀 4개를 하나로 합침 -->
+                </tr>
+            </tfoot>
+ 
+    </table>
+    
+</body>
+</html>

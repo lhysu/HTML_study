@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>other form</h1>
+
+    <form action="#" method="get">
+        <input type="radio" name="gender" id="gender" value="man" checked>남
+        <input type="radio" name="gender" id="gender" value="woman">여 <br>
+        <!-- checked: 하나는 무조건 선택하도록 기본 선택설정 -->
+        
+        <input type="date" name="birthday" id="birthday"> <br>                      <!--날짜 설정-->
+        <input type="datetime-local" name="dtime" id="dtime"> <br>                  <!--날짜, 시간 설정-->
+        <input type="color" name="dcolor" id="dcolor"> <br>                         <!--색 지정-->
+        <input type="hidden" name="num" id="num" value="33"><br>                    <!--화면엔 안보이지만 값은 넘어감-->
+        <input type="range" name="wdata" id="wdata" value=""><br>                   
+
+        <input type="button" name="btn" id="btn" value="click"> <br>
+        <button>click2</button>       <!--폼 밖에서는 단독 버튼이지만, 폼 안에서는 submit과 이벤트가 겹침(충돌날 수 있음)-->
+
+        <input type="submit" >
+
+    </form>
+    
+    <hr>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" id="namme" value="김길동"> <br>
+        <input type="file" name="file1" id="file1" > <br>
+        <input type="submit" value="업로드"> <br>
+
+
+    </form>
+
+
+
+
+</body>
+</html>

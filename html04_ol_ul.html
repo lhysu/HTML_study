@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.ulist01{
+            list-style-type: circle;        /*말머리 기호 변경*/
+        }
+        ul.ulist02{
+            list-style-type:square;        /*말머리 기호 변경*/
+        }
+
+        ol.olist01{
+            list-style-type: lower-alpha;
+        }
+        ol.olist02{
+            list-style-type:upper-alpha;
+        }
+
+        ul.menu01{
+            display: inline;               /*말머리기호 삭제(효과제거)*/
+        }
+    </style>
+</head>
+<body>
+
+<!-- 목록 만들기 -->
+    <!-- order가 있음(넘버링 o) -->
+    <ol class="olist01">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>딸기</li>
+    </ol>
+    <ol class="olist02">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>딸기</li>
+    </ol>
+
+    <!-- order가 없음(넘버링x) -->
+    <ul class="ulist01">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>딸기</li>
+    </ul>
+    <ul class="ulist02">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>딸기</li>
+    </ul>
+
+    <ul class="menu01">
+        <li>홈</li>
+        <li>회원가입</li>
+        <li>로그인</li>
+    </ul>
+
+</body>
+</html>

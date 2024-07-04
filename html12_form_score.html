@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>form</h1>
+
+    <!-- <form action="#" method="post" enctype="multipart/form-data"></form> -->
+    <!-- action: 데이터를 보낼 대상, method: 전송방식(get, post),
+     enctype="multipart/form-data": 첨부파일을 보낼 때(없으면 텍스트만 전송, 파일전송 시 method는  post ) -->
+
+
+     <!-- form -->
+    <form action="#" method="get">
+        <label for="name"> 이름:</label> <input type="text" name="name" id="name" value="홍길동">
+        <label for="kor">국어:</label><input type="number" name="kor" id="kor" value="99">
+        <label for="eng">영어:</label><input type="number" name="eng" id="eng" value="88">
+        <label for="math">수학:</label><input type="number" name="math" id="math" value="77">
+        <!-- name: key=value 꼴로 데이터 구분 가능하게 함(쿼리스트링처럼, 전송용) -->
+        <!-- value: default 값 지정 -->
+        <!-- id: 보통 name과 같은 값(java script와 css용) -->
+
+        
+        <input type="submit">       <!--전송-->
+
+    </form>
+
+    <!-- 한줄로 출력하고 싶으면 p나 table 이용 -->
+    <form action="#" method="get">
+        <p><label for="name"> 이름:</label> <input type="text" name="name" id="name" value="홍길동"></p>
+        <p><label for="kor">국어:</label> <input type="number" name="kor" id="kor" value="99"></p>
+        <p><label for="eng">영어:</label><input type="number" name="eng" id="eng" value="88"></p>
+        <p><label for="math">수학:</label><input type="number" name="math" id="math" value="77"></p>
+
+        <input type="submit">       <!--전송-->
+
+    </form>
+
+    <form action="#">
+        <table border="1">
+            <tr>
+                <td><label for="name"> 이름:</label></td>
+                <td><input type="text" name="name" id="name" value="홍길동"></td>
+            </tr>
+            <tr>
+                <td><label for="kor">국어:</label></td>
+                <td><input type="number" name="kor" id="kor" value="99"></td>
+            </tr>
+            <tr>
+                <td><label for="eng">영어:</label></td>
+                <td><input type="number" name="eng" id="eng" value="88"></td>
+            </tr>
+            <tr>
+                <td><label for="math">수학:</label></td>
+
+                <td><input type="number" name="math" id="math" value="77"></td>
+            </tr>
+        </table>
+        <input type="submit">
+
+
+    </form>
+
+
+
+</body>
+</html>

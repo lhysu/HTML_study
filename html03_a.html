@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{                                 /*a에 걸린 링크에 대해서 설정(링크는 이미지 등에도 걸 수 있음)*/
+            color: brown;
+            background-color: antiquewhite;
+            text-decoration: none;              /*링크 밑줄효과 변경*/
+        }
+        a:hover{
+            color: rgb(248, 246, 246);
+            background-color: rgb(119, 118, 116);
+            /*마우스 올리면 색 변경*/
+
+            text-decoration: none;              
+        }
+        a:active{
+            /*마우스를 클릭하고 있으면 색 변경*/
+            color: rgb(250, 121, 121);
+            background-color: rgb(239, 37, 37);
+            text-decoration: none;              /*링크 밑줄효과 변경*/
+        }
+        a:visited{
+            /*링크를 방문했었다면*/
+            color: rgb(172, 178, 240);
+            background-color: rgb(89, 6, 232);
+            text-decoration: none;              /*링크 밑줄효과 변경*/
+        }
+    </style>
+</head>
+<body>
+    <!-- nav: 링크 꾸러미(일렬로 출력) -->
+     <nav>
+        <!--a: 링크 -->
+        <a href="http://naver.com" target="_blank">네이버</a>
+        <!-- target=_blank : 새로운 브라우저 탭으로 연다 -->
+
+        <a href="http://google.com">구글</a>
+
+        <a href="html02_h1_h6.html">html02_h1_h6</a>
+        <!-- 같은 폴더 내에 있는 파일 링크 가능 -->
+
+     </nav>
+     
+     <nav>
+
+        <a href="#html5">html5</a><br>
+        <a href="#css">css</a><br>
+        <a href="#js">js</a><br>
+
+        <!-- id와 href="#~"는 한쌍(링크 클릭하면 id가 ~인 곳으로 이동) -->
+        <!-- <br>: 엔터처리(줄바꿈) -->
+
+     </nav>
+
+    <!-- 링크를 목록으로 만들 때(br을 사용하지 않고) -->
+     <nav>
+        <ul>
+            <li><a href="#html5">html5</a></li>
+            <li><a href="#css">css</a></li>
+            <li><a href="#js">js</a></li>
+        </ul>
+
+     </nav>
+    
+     <nav>
+        <dl>
+            <dt><a href="#html5">1.html5</a></dt>
+            <dd>a.html5란?</dd>
+            <dd>b.html역사</dd>
+    
+            <dt><a href="#css">2.css</a></dt>
+            <dd>a.css란?</dd>
+            <dd>b.css역사</dd>
+        </dl>
+
+     </nav>
+
+    <!-- div:꾸러미 -->
+    <div>    
+        <h1 id= "html5"> html5 </h1>       
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>   
+    </div>
+
+    <div>   
+        <h1 id= "css">css </h1>           
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>   
+    </div>
+    <div>  
+        <h1 id= "js"> js</h1>            
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>
+        <p>문장 한줄~여러줄 꾸러미</p>   
+    </div>
+</body>
+</html>
